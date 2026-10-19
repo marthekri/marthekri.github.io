@@ -1,11 +1,12 @@
 :root {
   color-scheme: light;
-  --background: #f5f7f6;
-  --surface: #ffffff;
-  --text: #20332e;
-  --muted: #4c625a;
-  --accent: #075b47;
-  --border: #cbd8d1;
+  --background: #C7C9C7;
+  --surface: #F2F2F3;
+  --text: #212721;
+  --muted: #383E42;
+  --accent: #00685E;
+  --accent-hover: #212721;
+  --border: #A7B7CD;
 }
 
 * { box-sizing: border-box; }
@@ -30,7 +31,7 @@ body {
 
 a { color: var(--accent); }
 a:hover { text-decoration-thickness: 0.15em; }
-a:focus-visible, .page-content:focus-visible { outline: 3px solid #b35400; outline-offset: -3px; }
+a:focus-visible, .page-content:focus-visible { outline: 3px solid #DF8200; outline-offset: -3px; }
 
 .skip-link {
   position: absolute;
@@ -50,6 +51,8 @@ a:focus-visible, .page-content:focus-visible { outline: 3px solid #b35400; outli
 
 .site-title {
   margin: 0;
+  padding-inline-start: 0.75rem;
+  border-inline-start: 4px solid #00957A;
   font-size: 1rem;
   font-weight: 700;
 }
@@ -65,7 +68,7 @@ main {
   background: var(--surface);
   border: 1px solid var(--border);
   border-radius: 1rem;
-  box-shadow: 0 1rem 3rem #20332e0d;
+  box-shadow: 0 1rem 3rem #2127210d;
   overflow: hidden;
 }
 
@@ -93,8 +96,8 @@ section { margin-top: 2rem; }
   border-radius: 0.5rem;
 }
 
-.notice { border-left: 5px solid #946200; margin-block: 1.5rem; }
-.summary { border-left: 5px solid var(--accent); margin: 1.5rem 0 0; }
+.notice { background: #FAE053; border-left: 5px solid #DF8200; margin-block: 1.5rem; }
+.summary { background: #A7B7CD; border-left: 5px solid #00957A; margin: 1.5rem 0 0; }
 .notice > :last-child, .summary > :last-child, .card > :last-child { margin-bottom: 0; }
 
 .module-grid {
@@ -121,12 +124,12 @@ section { margin-top: 2rem; }
   padding: 0.65rem 1rem;
   border-radius: 0.5rem;
   background: var(--accent);
-  color: white;
+  color: var(--surface);
   font-weight: 600;
   text-decoration: none;
 }
 
-.module-pagination a:hover { background: #123d31; }
+.module-pagination a:hover { background: var(--accent-hover); }
 .module-pagination > :first-child { justify-self: start; }
 .module-pagination > :last-child { justify-self: end; }
 .module-pagination > [aria-disabled], .page-count {
