@@ -17,6 +17,8 @@ fullstendige eller vedtatte retningslinjer.
 - Hver side vises i én skjermramme med fast navigasjon nederst. Behold innholdet
   i `.page-content`, som kan rulles med mus, berøring eller tastatur når det
   ikke får plass (for eksempel på mobil eller ved forstørret tekst).
+  Ved svært lav skjermhøyde, blant annet ved kraftig zoom, rulles hele siden
+  i stedet slik at innholdet ikke skjules.
 - Lenker fra moduler til forsiden og stilarket bruker `../index.html` og
   `../style.css`. Forrige-/neste-lenker mellom moduler bruker bare filnavnet.
 - Behold utkastmerkingen til materialet er avklart. Offisiell lenke til

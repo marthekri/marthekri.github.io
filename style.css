@@ -143,3 +143,14 @@ code { font-size: 1.05em; }
   .module-pagination a { padding: 0.65rem; }
   .notice, .summary, .card { padding: 1rem; }
 }
+
+@media (max-height: 24rem) {
+  body { height: auto; min-height: 100dvh; }
+  main { flex: none; overflow: visible; }
+  .page-content { overflow: visible; }
+  .module-pagination {
+    position: sticky;
+    bottom: 0;
+    background: var(--surface);
+  }
+}
