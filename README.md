@@ -1,4 +1,4 @@
-# Introduksjon til Claude Code i Vy
+# Introduksjon til Claude Code i &lt;organization&gt;
 
 Statisk kursutkast for GitHub Pages på https://marthekri.github.io/.
 Materialet er foreslått obligatorisk lesestoff før lisens tildeles, ikke
