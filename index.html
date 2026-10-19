@@ -1,185 +1,85 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nb">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Course Test Site</title>
-  <style>
-    :root {
-      --bg: #f7f9fc;
-      --card: #ffffff;
-      --text: #1f2937;
-      --muted: #6b7280;
-      --accent: #2563eb;
-      --border: #dbe3ef;
-    }
-
-    * { box-sizing: border-box; }
-
-    body {
-      margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
-      background: var(--bg);
-      color: var(--text);
-      line-height: 1.6;
-    }
-
-    header {
-      background: linear-gradient(135deg, #1d4ed8, #2563eb);
-      color: white;
-      padding: 4rem 1.5rem;
-      text-align: center;
-    }
-
-    header h1 {
-      margin: 0 0 0.75rem;
-      font-size: 2.5rem;
-    }
-
-    header p {
-      margin: 0 auto;
-      max-width: 700px;
-      font-size: 1.1rem;
-      opacity: 0.95;
-    }
-
-    nav {
-      background: #0f172a;
-      padding: 0.75rem 1rem;
-      position: sticky;
-      top: 0;
-    }
-
-    nav ul {
-      margin: 0;
-      padding: 0;
-      list-style: none;
-      display: flex;
-      gap: 1rem;
-      justify-content: center;
-      flex-wrap: wrap;
-    }
-
-    nav a {
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    main {
-      max-width: 960px;
-      margin: 0 auto;
-      padding: 2rem 1.25rem 4rem;
-    }
-
-    section {
-      background: var(--card);
-      border: 1px solid var(--border);
-      border-radius: 14px;
-      padding: 1.75rem;
-      margin-bottom: 1.5rem;
-      box-shadow: 0 8px 24px rgba(15, 23, 42, 0.06);
-    }
-
-    h2 {
-      margin-top: 0;
-      color: var(--accent);
-    }
-
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 1rem;
-      margin-top: 1rem;
-    }
-
-    .card {
-      border: 1px solid var(--border);
-      border-radius: 12px;
-      padding: 1rem;
-      background: #f8fbff;
-    }
-
-    .muted {
-      color: var(--muted);
-    }
-
-    footer {
-      text-align: center;
-      padding: 2rem 1rem 3rem;
-      color: var(--muted);
-    }
-  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Et kursutkast om muligheter, risiko og ansvar ved bruk av Claude Code i Vy.">
+  <title>Introduksjon til Claude Code i Vy</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1>Test Course Homepage</h1>
-    <p>Welcome to this example course site. This page is structured like a simple course with a welcome section, an introduction, placeholder content, and a closing section.</p>
+  <a class="skip-link" href="#innhold">Hopp til innhold</a>
+  <header class="site-header">
+    <div class="container">
+      <a class="site-title" href="index.html">Introduksjon til Claude Code i Vy</a>
+      <p class="draft">UTKAST – foreslått obligatorisk lesestoff før lisens tildeles.</p>
+    </div>
   </header>
-
-  <nav>
-    <ul>
-      <li><a href="#welcome">Welcome</a></li>
-      <li><a href="#intro">Intro</a></li>
-      <li><a href="#content">Content</a></li>
-      <li><a href="#end">End</a></li>
+  <nav class="course-nav" aria-label="Kursnavigasjon">
+    <ul class="container">
+      <li><a href="index.html" aria-current="page">Forside</a></li>
+      <li><a href="modules/introduksjon.html">1. Introduksjon</a></li>
+      <li><a href="modules/risiko-og-ansvar.html">2. Risiko og ansvar</a></li>
+      <li><a href="modules/data-og-informasjon.html">3. Data og informasjon</a></li>
+      <li><a href="modules/mcp-servere.html">4. MCP-servere</a></li>
+      <li><a href="modules/beste-praksis.html">5. Beste praksis</a></li>
+      <li><a href="modules/bekreftelse.html">6. Bekreftelse</a></li>
     </ul>
   </nav>
-
-  <main>
-    <section id="welcome">
-      <h2>Welcome</h2>
-      <p>Welcome to this test course. This GitHub Pages site is set up as a lightweight course landing page that can later be expanded with real lessons, assignments, schedules, or materials.</p>
-      <p class="muted">Use this section to greet students and explain what the course is about.</p>
+  <main id="innhold" class="container">
+    <h1>Velkommen til kurset</h1>
+    <p class="lead">Bli kjent med Claude Code og de viktigste rammene for bruk i Vy – fra muligheter og begrensninger til risiko og eget ansvar.</p>
+    <aside class="notice" aria-label="Om utkastet">
+      <h2>Les sammen med de offisielle retningslinjene</h2>
+      <p>Dette er et kursutkast og foreslått obligatorisk lesestoff før lisens tildeles. Det er ikke de fullstendige retningslinjene og erstatter dem ikke. De offisielle <strong>Retningslinjer for Claude Code i Vy</strong> finnes i tillegg og skal også leses.</p>
+      <p>Lenke til retningslinjene og rutinen for bekreftelse er ikke avklart i dette utkastet. Se <a href="modules/bekreftelse.html#retningslinjer">videre lesing og åpne avklaringer</a>.</p>
+    </aside>
+    <section aria-labelledby="mal">
+      <h2 id="mal">Dette skal du lære</h2>
+      <ul>
+        <li>Forstå hva Claude Code kan gjøre, og hvor verktøyet har begrensninger.</li>
+        <li>Gjenkjenne risiko og ta ansvar for handlinger og kode.</li>
+        <li>Begrense deling av informasjon og tilgang til data og verktøy.</li>
+        <li>Bruke KI til avgrensede oppgaver og kvalitetssikre resultatene.</li>
+      </ul>
+      <p>Kurset er rettet mot utviklere som skal bruke Claude Code i Vy. Les modulene i rekkefølge, eller bruk oversikten for å finne et tema igjen.</p>
+      <a class="button" href="modules/introduksjon.html">Start med modul 1</a>
     </section>
-
-    <section id="intro">
-      <h2>Introduction</h2>
-      <p>This introduction provides a brief overview of the course structure. In a real course, you might place learning goals, prerequisites, timeline details, and expected outcomes here.</p>
-      <div class="grid">
-        <div class="card">
-          <h3>Goal</h3>
-          <p>Learn the basics of the topic in a clear and accessible format.</p>
-        </div>
-        <div class="card">
-          <h3>Format</h3>
-          <p>Short modules, simple reading, and lightweight exercises.</p>
-        </div>
-        <div class="card">
-          <h3>Audience</h3>
-          <p>Anyone testing or exploring a possible future course setup.</p>
-        </div>
-      </div>
-    </section>
-
-    <section id="content">
-      <h2>Course Content</h2>
-      <p>Below is placeholder content for course modules. The actual material can be replaced later.</p>
-      <div class="grid">
-        <div class="card">
-          <h3>Module 1</h3>
-          <p>Lorem ipsum dolor sit amet, ploki narvi tembus alia. Placeholder text for an introductory lesson.</p>
-        </div>
-        <div class="card">
-          <h3>Module 2</h3>
-          <p>Fenda lorum kata neri umbos tila. This section can later contain examples, exercises, or notes.</p>
-        </div>
-        <div class="card">
-          <h3>Module 3</h3>
-          <p>Empty for now — reserved for future content, readings, or assignments.</p>
-        </div>
-      </div>
-    </section>
-
-    <section id="end">
-      <h2>End</h2>
-      <p>Thanks for visiting this test course page. This final section can later include a wrap-up, contact information, next steps, or links to further resources.</p>
-      <p class="muted">End of test course page.</p>
+    <section aria-labelledby="moduler">
+      <h2 id="moduler">Kursmoduler</h2>
+      <ol class="module-grid">
+        <li class="card">
+          <h3><a href="modules/introduksjon.html">1. Introduksjon</a></h3>
+          <p>Hva Claude Code er, hva det kan brukes til, og hvordan du får tilgang.</p>
+        </li>
+        <li class="card">
+          <h3><a href="modules/risiko-og-ansvar.html">2. Risiko og ansvar</a></h3>
+          <p>Handlinger på dine vegne, feilaktige forslag og ditt ansvar for kvalitet og sikkerhet.</p>
+        </li>
+        <li class="card">
+          <h3><a href="modules/data-og-informasjon.html">3. Data og informasjon</a></h3>
+          <p>Hva som ikke skal deles, og hvordan du skjermer filer og hemmeligheter.</p>
+        </li>
+        <li class="card">
+          <h3><a href="modules/mcp-servere.html">4. MCP-servere</a></h3>
+          <p>Tilganger, mulige risikoer og avklaringer som hører hjemme i retningslinjene.</p>
+        </li>
+        <li class="card">
+          <h3><a href="modules/beste-praksis.html">5. Beste praksis</a></h3>
+          <p>Gode bruksområder og en arbeidsmåte med tydelige rammer og kontroll.</p>
+        </li>
+        <li class="card">
+          <h3><a href="modules/bekreftelse.html">6. Bekreftelse og neste steg</a></h3>
+          <p>Oppsummering, videre lesing og forslag til bekreftelse på gjennomført lesing.</p>
+        </li>
+      </ol>
     </section>
   </main>
-
-  <footer>
-    <p>Built as a test GitHub Pages course site in <strong>marthekri.github.io</strong>.</p>
+  <footer class="site-footer">
+    <div class="container">
+      <p>Introduksjon til Claude Code i Vy · Kursutkast, ikke fullstendige retningslinjer.</p>
+      <a href="index.html">Til kursforsiden</a>
+    </div>
   </footer>
 </body>
 </html>
