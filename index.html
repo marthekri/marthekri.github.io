@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Course Test Site</title>
+  <style>
+    :root {
+      --bg: #f7f9fc;
+      --card: #ffffff;
+      --text: #1f2937;
+      --muted: #6b7280;
+      --accent: #2563eb;
+      --border: #dbe3ef;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(135deg, #1d4ed8, #2563eb);
+      color: white;
+      padding: 4rem 1.5rem;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0 0 0.75rem;
+      font-size: 2.5rem;
+    }
+
+    header p {
+      margin: 0 auto;
+      max-width: 700px;
+      font-size: 1.1rem;
+      opacity: 0.95;
+    }
+
+    nav {
+      background: #0f172a;
+      padding: 0.75rem 1rem;
+      position: sticky;
+      top: 0;
+    }
+
+    nav ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    main {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 2rem 1.25rem 4rem;
+    }
+
+    section {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 1.75rem;
+      margin-bottom: 1.5rem;
+      box-shadow: 0 8px 24px rgba(15, 23, 42, 0.06);
+    }
+
+    h2 {
+      margin-top: 0;
+      color: var(--accent);
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+
+    .card {
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 1rem;
+      background: #f8fbff;
+    }
+
+    .muted {
+      color: var(--muted);
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem 1rem 3rem;
+      color: var(--muted);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Test Course Homepage</h1>
+    <p>Welcome to this example course site. This page is structured like a simple course with a welcome section, an introduction, placeholder content, and a closing section.</p>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#welcome">Welcome</a></li>
+      <li><a href="#intro">Intro</a></li>
+      <li><a href="#content">Content</a></li>
+      <li><a href="#end">End</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section id="welcome">
+      <h2>Welcome</h2>
+      <p>Welcome to this test course. This GitHub Pages site is set up as a lightweight course landing page that can later be expanded with real lessons, assignments, schedules, or materials.</p>
+      <p class="muted">Use this section to greet students and explain what the course is about.</p>
+    </section>
+
+    <section id="intro">
+      <h2>Introduction</h2>
+      <p>This introduction provides a brief overview of the course structure. In a real course, you might place learning goals, prerequisites, timeline details, and expected outcomes here.</p>
+      <div class="grid">
+        <div class="card">
+          <h3>Goal</h3>
+          <p>Learn the basics of the topic in a clear and accessible format.</p>
+        </div>
+        <div class="card">
+          <h3>Format</h3>
+          <p>Short modules, simple reading, and lightweight exercises.</p>
+        </div>
+        <div class="card">
+          <h3>Audience</h3>
+          <p>Anyone testing or exploring a possible future course setup.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="content">
+      <h2>Course Content</h2>
+      <p>Below is placeholder content for course modules. The actual material can be replaced later.</p>
+      <div class="grid">
+        <div class="card">
+          <h3>Module 1</h3>
+          <p>Lorem ipsum dolor sit amet, ploki narvi tembus alia. Placeholder text for an introductory lesson.</p>
+        </div>
+        <div class="card">
+          <h3>Module 2</h3>
+          <p>Fenda lorum kata neri umbos tila. This section can later contain examples, exercises, or notes.</p>
+        </div>
+        <div class="card">
+          <h3>Module 3</h3>
+          <p>Empty for now — reserved for future content, readings, or assignments.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="end">
+      <h2>End</h2>
+      <p>Thanks for visiting this test course page. This final section can later include a wrap-up, contact information, next steps, or links to further resources.</p>
+      <p class="muted">End of test course page.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Built as a test GitHub Pages course site in <strong>marthekri.github.io</strong>.</p>
+  </footer>
+</body>
+</html>
