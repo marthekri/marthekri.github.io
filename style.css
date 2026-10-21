@@ -139,6 +139,34 @@ section { margin-top: 2rem; }
 
 code { font-size: 1.05em; }
 
+.completion-form { max-width: 42rem; }
+.completion-form fieldset { margin: 0; padding: 1rem; border: 1px solid var(--border); border-radius: 0.5rem; min-width: 0; }
+.completion-form legend { font-weight: 700; }
+.completion-form label { display: block; margin-top: 1rem; font-weight: 600; }
+.completion-form input:not([type="checkbox"]) {
+  display: block;
+  width: 100%;
+  padding: 0.65rem;
+  border: 1px solid var(--muted);
+  border-radius: 0.25rem;
+  font: inherit;
+}
+.completion-form .confirmation-choice { display: flex; align-items: baseline; gap: 0.75rem; }
+.confirmation-choice input { flex-shrink: 0; }
+.completion-form button {
+  padding: 0.75rem 1rem;
+  border: 0;
+  border-radius: 0.5rem;
+  background: var(--accent);
+  color: var(--surface);
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+}
+.completion-form button:hover:not(:disabled) { background: var(--accent-hover); }
+.completion-form button:disabled { opacity: 0.65; cursor: not-allowed; }
+.completion-form input:focus-visible, .completion-form button:focus-visible { outline: 3px solid #DF8200; outline-offset: 3px; }
+
 @media (max-width: 40rem) {
   .container { width: calc(100% - 1rem); }
   main { margin-bottom: 0.5rem; }
